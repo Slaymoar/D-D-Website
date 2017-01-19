@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magic the Gathering Life Tracker</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+        <script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/app.js"></script>
+    </head>
+
+    <body>
+        
+        <!-- Keep track of players Names and Health(Score) -->
+        <div class="counter">
+
+        <!-- player 1 -->
+
+            <!-- Name -->
+            <span class="player" data-player="player1">
+                <div class="item name">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name1" placeholder="Player 1" />
+                </div>
+
+                <!-- Score -->
+                <div class="item score">
+                    <label for="score">Score: </label>
+                    <input type="text" name="score" id="score1" value="20" disabled="disabled" />
+                </div>
+
+                <!-- Add and Subtract Score -->
+                <div>
+                    <span class="left">
+                        <button class="minus" data-direction="minus">-</button>
+                    </span>
+                    <span class="right">
+                        <button class="plus" data-direction="plus">+</button>
+                    </span>
+                </div>
+            </span>
+
+            <!-- -Player 2- -->
+
+            <!-- Name -->
+            <span class="player" data-player="player2">
+                <div class="item name">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name2" placeholder="Player 2" />
+                </div>
+                
+                <!-- Score --> 
+                <div class="item score">
+                    <label for="score">Score: </label>
+                    <input type="text" name="score" id="score2" value="20" disabled="disabled" />
+                </div>
+
+                <!-- Add and Subtract score -->
+                <div>
+                    <span class="left">
+                        <button class="minus" data-direction="minus">-</button>
+                    </span>
+                    <span class="right">
+                        <button class="plus" data-direction="plus">+</button>
+                    </span>
+                </div>
+            </span>
+
+        </div>
+
+
+        <div class="table" data-id="games">
+            <div>Game History</div>
+            <table >
+                <thead>
+                    <tr>
+                        <th>Datetime</th>
+                        <th>Player 1</th>
+                        <th>Score</th>
+                        <th>Player 2</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr><td>0</td><td>Matthew</td><td>20</td><td>Ian</td><td>0</td></tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Matthew</td>
+                        <td>14</td>
+                        <td>Ian</td>
+                        <td>0</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+
+</html>
